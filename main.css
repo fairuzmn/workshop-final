@@ -1,0 +1,304 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    width: 100%;
+    color: #646464;
+    background-color: #F9F9F9;
+}
+
+/* INFO HEADER CSS */
+.info-header {
+    background-color: black;
+    color: #707070;
+}
+
+.loginHeader {
+    cursor: pointer;
+    color: #707070;
+    text-decoration: none;
+}
+
+.registerLogin {
+    margin-left: 58%;
+}
+
+.loginHeader:hover,
+.registerLogin:hover {
+    color: #2ECC71;
+}
+
+.email {
+    margin-left: 2%;
+}
+
+.favSection:hover,
+.cartSection:hover {
+    cursor: pointer;
+    color: #2ECC71;
+}
+
+.btn {
+    background-color: #2ECC71;
+}
+
+/* HEADER CSS */
+
+.labelText {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: expanded;
+}
+
+.labelTextHijau {
+    color: #2ECC71;
+}
+
+.formSearch {
+    flex: 100%;
+    padding: 10px;
+}
+
+.favSection {
+    margin: 2%;
+    margin-left: 0%;
+}
+
+.header {
+    background-color: #FBFBFB;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
+
+
+.allCategori {
+    background-color: #2ECC71;
+    width: 18%;
+    margin-right: 2%;
+}
+
+.allCategoriText {
+    color: white;
+    /* margin-left: ; */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuItemText:hover,
+.menuItem:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2ECC71;
+}
+
+.menuItemText {
+    text-decoration: none;
+    color: #646464;
+}
+
+/* END HEADER */
+
+/* MAIN */
+.titleSection {
+    /* width: 100%; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.card-columns {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 5px 5px 6px rgba(100, 100, 100, 0.26);
+    width: 20%;
+    box-sizing: border-box;
+    margin: 25px;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px 0px;
+}
+
+.card-title {
+    /* background-color: grey; */
+    margin-top: 15%;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.section-price {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Pagination Style */
+.pagination-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagination {
+    display: inline-block;
+    margin: 50px 0px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* END MAIN */
+
+/* START FOOTER */
+.footer {
+    background-color: #232323;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.itemFooter {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.itemFooterTitle {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.titleFooter {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+
+.itemContent {
+    color: white;
+    letter-spacing: 0.5px;
+    margin: 10px 0px;
+}
+
+.imgSupport {
+    margin: 20px 0px;
+}
+
+.footer-copyright {
+    background-color: black;
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.copyrightSection {
+    margin: 10px 0px;
+}
+
+
+.formSubscribe {
+    box-sizing: border-box;
+}
+
+.subscribeInput {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 20px 0px 0px 20px;
+    /* top left, top right, bottom right, bottom left */
+}
+
+.subscribeInput:focus {
+    outline-width: 0;
+}
+
+.buttonSubscribe {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2ECC71;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #2ECC71;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+    /* top left, top right, bottom right, bottom left */
+}
+
+.buttonSubscribe:focus {
+    outline-width: 0;
+}
+
+.formSubscribe::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.socmedSection {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.socmedItem {
+    margin: 10px;
+}
