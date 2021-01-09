@@ -16,9 +16,9 @@
       </span>
     </div>
     <!-- RegisterLogin -->
-    <div class="registerLogin p-1">
-      <i class="far fa-user"></i>
-      <a class="loginHeader">
+    <div class="registerLogin p-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <a href="#" class="loginHeader">
+        <i class="far fa-user"></i>
         Register or Login
       </a>
     </div>
@@ -51,9 +51,9 @@
       <i class="far fa-heart"></i>
     </div>
     <div class="cartSection" style="font-size: 2rem;">
-     <a href="?r=keranjang">
-       <i class="far fa-shopping-cart"></i>
-     </a> 
+      <a href="?r=keranjang">
+        <i class="far fa-shopping-cart"></i>
+      </a>
     </div>
   </div>
   <div class="container d-flex">
@@ -85,6 +85,40 @@
       </div>
       <div class="menuItem">
         <a class="menuItemText">Vivo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-login modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="avatar">
+          <img src="img/avatar.png" alt="Avatar">
+        </div>
+        <h4 class="modal-title">Member Login</h4>
+        <button class="close" data-bs-dismiss="modal" aria-label="Close">
+          <i data-feather="x-circle" style="height:18px"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Username" required="required" autocomplete="off">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required" autocomplete="off">
+          </div>
+          <br>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn" style="width:100%;">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Forgot Password?</a>
       </div>
     </div>
   </div>

@@ -39,6 +39,7 @@ $produk = [
   <link href="assets/fontawesomepro/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="login.css">
   <title>Hello World</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -86,7 +87,7 @@ $produk = [
     function goHome() {
       location.replace('index.php')
     }
-    
+
     feather.replace()
   </script>
 </body>
