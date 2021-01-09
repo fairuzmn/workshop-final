@@ -16,7 +16,7 @@ body {
     background-color: #F9F9F9;
 }
 
-.mainSectionHeader:hover{
+.mainSectionHeader:hover {
     cursor: pointer;
 }
 
@@ -409,4 +409,43 @@ body {
 
 .btn-successv2 {
     background-color: #4CAF50;
+}
+
+/* Alamat Saya Page */
+
+.card-alamat {
+    box-shadow: 5px 5px 6px rgba(100, 100, 100, 0.26);
+    width: 96%;
+    box-sizing: border-box;
+    margin: 25px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-body-alamat {
+    margin: 20px
+}
+
+.alamatItem {
+    flex: 1 0 40%;
+    /* explanation below */
+    margin: 10px 30px;
+    height: 100px;
+}
+
+.labelAlamat {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fakeInput {
+    margin-top: 15px;
+    border-bottom: 5px solid #4CAF50;
+    font-size: 28px;
+}
+
+.fakeInputValue {
+    margin-left: 10px;
+    font-weight: bold;
 }

@@ -8,7 +8,6 @@ $arrKeranjang = [
 ]
 
 ?>
-
 <div class="main">
     <div class="container">
         <div class="titleSection">
@@ -56,6 +55,82 @@ $arrKeranjang = [
         </div>
         <div class="titleSection">
             <h4 class="title">Alamat Pengiriman : </h4>
+        </div>
+        <div class="card-alamat" id="divProduct">
+            <div class="card-body">
+                <div class="card-body-alamat d-flex flex-row flex-wrap">
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Nama
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                Fairuz Minan Nafiz
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Nomor Telepon
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                0812 4911 8805
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Kabupaten
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                Gresik
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Kecamatan
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                Panceng
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Desa
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                Wotan
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Kode Pos
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                61156
+                            </section>
+                        </div>
+                    </div>
+                    <div class="alamatItem">
+                        <section class="labelAlamat">
+                            Alamat Lengkap
+                        </section>
+                        <div class="fakeInput">
+                            <section class="fakeInputValue">
+                                Jl Poros Desa Wotan RT 005 RW 002 Kec. Panceng Kab. Gresik
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
