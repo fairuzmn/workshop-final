@@ -302,3 +302,11 @@ body {
 .socmedItem {
     margin: 10px;
 }
+
+.socmedItem a {
+    color:inherit;
+}
+
+.socmedItem a:hover {
+    color:#2ECC71;
+}
