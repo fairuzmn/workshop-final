@@ -125,6 +125,7 @@ body {
     /* width: 100%; */
     margin-top: 5%;
     margin-bottom: 3%;
+    margin-left: 5px;
 }
 
 .title {
@@ -423,6 +424,12 @@ body {
     border-radius: 20px;
 }
 
+.alamat-pengiriman {
+    margin-bottom: 80px;
+}
+
+
+
 .card-body-alamat {
     margin: 20px
 }
@@ -448,4 +455,67 @@ body {
 .fakeInputValue {
     margin-left: 10px;
     font-weight: bold;
+}
+
+/* Select Pembayaran */
+.pilihPembayaran {
+    margin-top: 20px;
+}
+
+label>input+img {
+    /* style gambar */
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-left: 10px;
+}
+
+label>input:checked+img {
+    /* (RADIO CHECKED) style gambar */
+    border: 3px solid #4CAF50;
+    border-radius: 60px 30px 30px 60px;
+    /* top left, top right, bottom right, bottom left */
+}
+
+.card-pembayaran {
+    box-shadow: 5px 5px 6px rgba(100, 100, 100, 0.26);
+    width: 96%;
+    height: 400px;
+    box-sizing: border-box;
+    margin: 25px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.pembayaranItem {
+    margin: 10px 0px;
+}
+
+.buttonHargaDiv {
+    margin: 20px 0px;
+}
+
+.buttonCheckout {
+    background-color: #2ECC71;
+    border-color: #2ECC71;
+}
+
+.buttonRemoveAll {
+    background-color: #E17055;
+    border-color: #E17055;
+}
+
+.buttonCheckout,
+.buttonRemoveAll {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.buttonCheckout:hover,
+.buttonRemoveAll:hover {
+    color:greenyellow
 }

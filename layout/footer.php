@@ -55,10 +55,10 @@
                         <img src="img/support/gopay.png" alt="" height="30px" width="125px">
                     </div>
                     <div class="imgSupport">
-                        <img src="img/support/dana.png" alt="" height="30px" width="125px">
+                        <img src="img/support/new/Dana.png" alt="" height="30px" width="125px">
                     </div>
                     <div class="imgSupport">
-                        <img src="img/support/ovo.png" alt="" height="30px" width="125px">
+                        <img src="img/support/new/Ovo.png" alt="" height="30px" width="125px">
                     </div>
                 </div>
             </div>

@@ -69,20 +69,29 @@ $produk = [
   <script src="https://unpkg.com/feather-icons"></script>
   <script>
     var $progress = $('#progress');
+    $(window).on('load', (function() {
+      // console.log('load')
+      // $progress.width("100%").delay(200).fadeOut(400, function() {
+      //   $progress.width("0%").delay(200).show();
+      // });
+
+      setTimeout(() => {
+        $progress.width("100%").delay(200).fadeOut(400, function() {
+          $progress.width("0%").delay(200).show();
+        });
+      }, 100)
+    }));
+
     $(window).ready(function() {
       //only add progress bar if not added yet.
+      // console.log('ready')
+
       if ($progress.length === 0) {
         $progress = $('<div><dt/><dd/></div>').attr('id', 'progress');
         $("body").append($progress);
       }
       $progress.width((50 + Math.random() * 30) + "%");
     })
-
-    $(window).on('load', (function() {
-      $progress.width("100%").delay(200).fadeOut(400, function() {
-        $progress.width("0%").delay(200).show();
-      });
-    }));
 
     function goHome() {
       location.replace('index.php')
