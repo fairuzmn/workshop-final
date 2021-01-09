@@ -16,6 +16,10 @@ body {
     background-color: #F9F9F9;
 }
 
+.mainSectionHeader:hover{
+    cursor: pointer;
+}
+
 /* INFO HEADER CSS */
 .info-header {
     background-color: black;

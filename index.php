@@ -38,7 +38,9 @@ $produk = [
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="assets/fontawesomepro/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="loading.css">
   <title>Hello World</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -65,6 +67,26 @@ $produk = [
   </script>
   <script src="https://unpkg.com/feather-icons"></script>
   <script>
+    var $progress = $('#progress');
+    $(window).ready(function() {
+      //only add progress bar if not added yet.
+      if ($progress.length === 0) {
+        $progress = $('<div><dt/><dd/></div>').attr('id', 'progress');
+        $("body").append($progress);
+      }
+      $progress.width((50 + Math.random() * 30) + "%");
+    })
+
+    $(window).on('load', (function() {
+      $progress.width("100%").delay(200).fadeOut(400, function() {
+        $progress.width("0%").delay(200).show();
+      });
+    }));
+
+    function goHome() {
+      location.replace('index.php')
+    }
+    
     feather.replace()
   </script>
 </body>

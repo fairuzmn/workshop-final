@@ -27,10 +27,10 @@
 
 <div class="header">
   <div class="container d-flex align-items-center">
-    <div class="mainSectionHeader">
-      <span class="labelText">
+    <div class="mainSectionHeader" onclick="goHome()">
+      <section class="labelText">
         HAPE<span class="labelTextHijau">KUN</span>
-      </span>
+      </section>
     </div>
     <div class="formSearch">
       <div class="input-group">
