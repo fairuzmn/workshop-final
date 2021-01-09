@@ -1,10 +1,10 @@
 <?php
 
 $arrKeranjang = [
-    ['Redmi 4A 3/32 - Hitam', 1100000, 3, 'redmi4a.jpg'],
-    ['Redmi Note 8 4/64 - Hitam', 2200000, 1, 'redminote8.jpg'],
-    ['One Plus 3T 6/64 - Silver', 2000000, 1, 'oneplus 3t.jpg'],
-    ['Asus ROG Phone 3/128 - Hitam', 10500000, 1, 'rog phone.jpg'],
+    ['Redmi 4A 3/32', 1100000, 3, 'redmi4a.jpg','Hitam'],
+    ['Redmi Note 8 4/64', 2200000, 1, 'redminote8.jpg','Hitam'],
+    ['One Plus 3T 6/64', 2000000, 1, 'oneplus 3t.jpg','Silver'],
+    ['Asus ROG Phone 3/128', 10500000, 1, 'rog phone.jpg','Hitam'],
 ]
 
 ?>
@@ -26,6 +26,8 @@ $arrKeranjang = [
                                 <div class="itemKeranjang">
                                     <section class="namaHpKeranjang">
                                         <?= $item[0] ?>
+                                        <br>
+                                        Warna : <?= $item[4] ?>
                                     </section>
                                 </div>
                                 <div class="itemKeranjang">
