@@ -2,6 +2,14 @@
     font-family: 'Roboto';
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #2ECC71;
+}
+
 body {
     width: 100%;
     color: #646464;
@@ -39,7 +47,7 @@ body {
     color: #2ECC71;
 }
 
-.btn {
+.btn-search {
     background-color: #2ECC71;
 }
 
@@ -299,14 +307,102 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .socmedItem {
     margin: 10px;
 }
 
-.socmedItem a {
-    color:inherit;
+/* Keranjang Page */
+
+.card-keranjang {
+    box-shadow: 5px 5px 6px rgba(100, 100, 100, 0.26);
+    width: 46%;
+    box-sizing: border-box;
+    margin: 25px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
 }
 
-.socmedItem a:hover {
-    color:#2ECC71;
+.cardFLex {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .card-img-keranjang, */
+.detailQuantity,
+.detailItemKeranjang {
+    margin: 10px 0px;
+}
+
+.card-img-keranjang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailItemKeranjang {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.detailQuantity {
+    flex: 1;
+}
+
+.itemKeranjang {
+    flex: 2;
+    margin: 20px 0px;
+}
+
+.namaHpKeranjang {
+    font-size: 25px;
+}
+
+.quantityText,
+.subtotalKeranjang {
+    font-size: 18px;
+}
+
+.namaHpKeranjang,
+.quantityText,
+.subtotalKeranjang {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.inputQuantity {
+    outline-color: #4CAF50;
+    margin-left: 5px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.quantityText {
+    font-weight: bold;
+}
+
+.inputQuantity {
+    width: 20%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-left: 0px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+.btn-successv2 {
+    background-color: #4CAF50;
 }

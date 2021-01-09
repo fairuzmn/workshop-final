@@ -3,7 +3,7 @@
 function rupiah($angka)
 {
 
-  $hasil_rupiah = "Rp " . number_format($angka, 2, ',', '.');
+  $hasil_rupiah = "Rp " . number_format($angka, 0, ',', '.');
   return $hasil_rupiah;
 }
 
@@ -38,52 +38,25 @@ $produk = [
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="assets/fontawesomepro/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
-  <title>Hello, world!</title>
+  <title>Hello World</title>
 </head>
 
 <body>
-  <?php include('layout/header.php') ?>
-  <div class="main">
-    <div class="container">
-      <div class="titleSection">
-        <h4 class="title">Rekomendasi Untuk Kamu</h4>
-      </div>
-      <div class="card-columns">
-        <?php foreach ($produk as $item) { ?>
-          <div class="card" id="divProduct">
-            <div class="card-body">
-              <div class="card-img">
-                <img src="img/<?= $item[2] ?>" alt="" height="200px" width="200px">
-              </div>
-              <div class="card-title">
-                <section class="section-title">
-                  <?= $item[0] ?>
-                </section>
-              </div>
-              <div class="card-price">
-                <section class="section-price">
-                  <?= Rupiah($item[1]) ?>
-                </section>
-              </div>
-            </div>
-          </div>
-        <?php } ?>
-      </div>
-      <div class="pagination-section">
-        <div class="pagination">
-          <a href="#">&laquo;</a>
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">&raquo;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php include('layout/footer.php') ?>
+  <?php
+  include('layout/header.php');
+
+  if (!isset($_GET['r'])) {
+    include('pages/home.php');
+  } else {
+    if (file_exists('pages/' . $_GET['r'] . '.php')) {
+      include('pages/' . $_GET['r'] . '.php');
+    } else {
+      include('pages/home.php');
+    }
+  }
+
+  include('layout/footer.php');
+  ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
 

@@ -36,7 +36,7 @@
       <div class="input-group">
         <input type="text" class="form-control searchProduct" placeholder="Search Product">
         <div class="input-group-append">
-          <button class="btn btn-secondary" type="button">
+          <button class="btn btn-secondary btn-search" type="button">
             <i class="fa fa-search"></i>
           </button>
         </div>
@@ -51,7 +51,9 @@
       <i class="far fa-heart"></i>
     </div>
     <div class="cartSection" style="font-size: 2rem;">
-      <i class="far fa-shopping-cart"></i>
+     <a href="?r=keranjang">
+       <i class="far fa-shopping-cart"></i>
+     </a> 
     </div>
   </div>
   <div class="container d-flex">
