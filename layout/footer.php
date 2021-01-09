@@ -104,16 +104,24 @@
                     </div>
                     <div class="socmedSection">
                         <div class="socmedItem">
-                            <i data-feather="facebook" style="height:20px"></i>
+                            <a href="#">
+                                <i data-feather="facebook" style="height:20px"></i>
+                            </a>
                         </div>
                         <div class="socmedItem">
-                            <i data-feather="twitter" style="height:20px"></i>
+                            <a href="#">
+                                <i data-feather="twitter" style="height:20px"></i>
+                            </a>
                         </div>
                         <div class="socmedItem">
-                            <i data-feather="youtube" style="height:20px"></i>
+                            <a href="#">
+                                <i data-feather="youtube" style="height:20px"></i>
+                            </a>
                         </div>
                         <div class="socmedItem">
-                            <i data-feather="rss" style="height:20px"></i>
+                            <a href="#">
+                                <i data-feather="rss" style="height:20px"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
