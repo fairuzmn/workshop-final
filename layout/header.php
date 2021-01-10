@@ -16,10 +16,16 @@
       </span>
     </div>
     <!-- RegisterLogin -->
-    <div class="registerLogin p-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <div class="registerLogin p-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <a href="#" class="loginHeader">
         <i class="far fa-user"></i>
         Register or Login
+      </a>
+    </div> -->
+    <div class="registerLogin p-1">
+      <a href="?r=profile" class="loginHeader">
+        <i class="far fa-user"></i>
+        Fairuz
       </a>
     </div>
   </div>
